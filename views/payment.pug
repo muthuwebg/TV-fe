@@ -1,0 +1,44 @@
+extends layout
+
+block content
+	.container
+		.row
+			.col-sm-12
+				.payment-box
+					h2 Payment
+					.row
+						.col-sm-6
+							.product-detail
+								h4 #{payment.plans[0].name}
+								p #{payment.plans[0].description}
+						.col-sm-6
+							.payment
+								.row
+									.col-sm-6
+										p Amount
+									.col-sm-6
+										p Rs ₹ #{payment.plans[0].price}
+								.row
+									.col-sm-6
+										p GST
+									.col-sm-6
+										p Rs ₹ 18
+								.row
+									.col-sm-6
+										p Grant Total
+									.col-sm-6
+										p Rs ₹ #{payment.plans[0].price + 18}
+								.row
+									.col-sm-12
+										h4 Choose Payment
+										ul.pay-option
+											li.payment-option Visa
+											li.payment-option Master
+											li.payment-option UPI
+											li.payment-option wallet
+										label.error.hide Please the payment Type
+								.row
+									.col-sm-12
+										button.btn#payment(data-plan=`${payment.plans[0].id}`) Pay
+block script
+	script(type='text/javascript', src=utils.assetPath("/bundle/home.js"))

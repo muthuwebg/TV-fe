@@ -1,0 +1,22 @@
+#login.modal.fade(role='dialog')
+	.modal-dialog
+		.modal-content
+			.modal-header
+				button.close(type='button', data-dismiss='modal') &times;
+				h4.modal-title Login
+			.modal-body
+				form#loginform
+					.row
+						.col-sm-12
+							.form-group
+								label Email address:
+								input#lemail.form-control(type='email', name="lemail")
+					.row
+						.col-sm-12
+							.form-group
+								label Password:
+								input#lpwd.form-control(type='password', name="lpwd")
+					.row
+						.col-sm-12
+							.form-group
+								button.btn.btn-default(type='submit') Submit

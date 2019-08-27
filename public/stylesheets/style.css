@@ -1,0 +1,94 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "./header.css";
+
+.plan-card {
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,.15);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.plan-card:first-child { 
+	margin-top: 20px;
+}
+
+.plan-section {
+	padding: 15px 10px;
+    display: flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    min-height: 100px;
+    position: relative;
+    border-radius: 9px 9px 0 0;
+    background: #ecebeb;
+    text-align: center;
+}
+
+.plan-section a {
+	padding: 10px 15px;
+	background: #f90;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.payment-box {
+	min-height: 500px;
+	padding-top: 20px;
+}
+
+.payment-box h2 {
+	margin-bottom: 15px;
+}
+
+.product-detail {
+	border: 1px solid #333;
+	border-radius: 10px;
+	min-height: 200px;
+	width: 100%;
+	padding: 15px;
+}
+
+.payment {
+	border: 1px solid #f0f0f0;
+	background: #f0f0f0;
+	padding: 15px;
+	border-radius: 10px;
+	min-height: 200px;
+}
+
+.pay-option {
+	padding: 0;
+}
+
+.pay-option li {
+	display: inline-block;
+	padding: 8px 10px;
+	background: #f0e293;
+	color: #333;
+	margin-right: 10px;
+	font-weight: bold;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.payment button {
+	background: #f90;
+	color: #fff;
+	width: 100%;
+}
+
+.payment button:hover, .payment button:active {
+	color: #fff;
+}
+
+.active-green {
+	background: #95c94e !important;
+	color: #fff !important;
+}

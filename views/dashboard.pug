@@ -1,0 +1,37 @@
+extends layout
+
+block content
+	.container
+		.row
+			.col-sm-12
+				.row
+					.col-sm-12
+						h3 Our Plans
+				each plan, planId in dashboard.plans
+					.row
+						.plan-card
+							.plan-section
+								.col-sm-3
+									h3 #{plan.name}
+								.col-sm-6
+									p #{plan.description}
+								.col-sm-3
+									p 
+										strong Rs ₹ #{plan.price}
+									a(href=`/payment/${plan.name_short}`) Scbscribe
+		if (dashboard.subscribedCount && dashboard.subscribedCount > 0)
+			.row
+				.col-sm-12
+					h4 You have #{dashboard.subscribedCount} Subscribed plans
+				.col-sm-12
+					each plan, planId in dashboard.subscribedPlans
+						.row
+							.plan-card
+								.plan-section
+									.col-sm-12
+										h3 #{plan.name}
+										p #{plan.description}
+										p Expiry:
+											strong #{plan.expiry_date}
+block script
+	script(type='text/javascript', src=utils.assetPath("bundle/home.js"))

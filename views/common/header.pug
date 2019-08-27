@@ -1,0 +1,33 @@
+header.header-block
+	.container-fluid
+		.row
+			.col-sm-12
+				.row
+					.col-sm-3
+						h1 D2H
+					.col-sm-9
+						ul
+							li
+								a(href="#") Consumer Corner
+							li
+								a(href="#") Set Top Box
+							li
+								a(href="#") Book Now
+							li
+								a(href="#") Recharge
+							li
+								a(href="#") Active Services
+							li
+								a(href="#") d2h Apps
+							if (!userInfo.isLoggedIn)
+								li
+									a(href="#" data-toggle="modal" data-target="#login", data-backdrop="false") Login
+								li
+									a(href="#" data-toggle="modal" data-target="#register", data-backdrop="false") Register
+							li
+								a(href="#") My Account
+							li
+								span Welcome, #{userInfo.isLoggedIn ? userInfo.user.name : userInfo.name}
+							if (userInfo.isLoggedIn)
+								li
+									a(href="/logout") Logout

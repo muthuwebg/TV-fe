@@ -1,0 +1,47 @@
+header {
+	background: #9569b0;
+	padding: 20px 10px;
+}
+
+header h1 {
+	margin: 0;
+	color: #fff;
+}
+
+header ul {
+	margin-top: 7px;
+}
+
+header ul li {
+	display: inline-block;
+	margin-left: 15px;
+}
+
+header ul li a {
+	color: #fff;
+}
+
+header ul li a:hover {
+	color: #fff;
+	border-bottom: 2px solid #609;
+	text-decoration: none;
+	padding-bottom: 3px;
+}
+
+header ul li span {
+	color: #fff;
+	font-weight: bold;
+}
+
+footer {
+	background: rgba(0, 0, 0, 0.76);
+	padding: 15px 10px;
+	min-height: 50px;
+	color: #fff;
+	text-align: center;
+}
+
+.error {
+	font-size: 13px;
+	color: #a94442;
+}

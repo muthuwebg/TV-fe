@@ -1,0 +1,13 @@
+extends layout
+
+block content
+	#homeslider.carousel.slide(data-ride='carousel')
+		.carousel-inner
+			.item.active
+				img(src='bundle/assets/images/banner1.jpg', alt='Los Angeles')
+			.item
+				img(src='bundle/assets/images/banner2.png', alt='Los Angeles')
+	include ./common/login
+	include ./common/register
+block script
+	script(type='text/javascript', src=utils.assetPath("bundle/home.js"))
